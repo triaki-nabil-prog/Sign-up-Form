@@ -1,0 +1,136 @@
+@import url(https://fontlibrary.org//face/school-cursive);
+@import url(https://fontlibrary.org//face/racing-sans);
+/* font-family: 'SchoolCursiveRegular'; */
+/* font-family: 'RacingSansOneRegular'; */
+
+/* color palette */
+:root {
+    --text-color: #283618;
+    --background-color: #FEFAE0;
+    --background-color-intro: #DDA15E;
+    --logo-color: #BC6C25;
+    --input-area-color: #606C38;
+    --font-stack: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-stack);
+    
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    line-height: 1.2;
+    color: var(--text-color);
+}
+
+
+
+img {
+    width: 80px;
+    
+}
+
+.container {
+    display: flex;
+
+}
+
+.side-logo {
+    background-image: url("/img/sunset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    min-width: 35vw;
+
+    display: flex;
+    padding-top: 20vh;
+    
+
+}
+
+.logo {
+    height: 140px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: black;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+
+}
+
+.logoTitle {
+    height: 80px;
+    color: var(--logo-color) ;
+    font-weight: bolder;
+    padding: 10px;
+    font-size: 6rem;
+    font-family: 'SchoolCursiveRegular', var(--font-stack);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header {
+    background-color: var(--background-color-intro);
+    font-family: 'RacingSansOneRegular', var(--font-stack);
+    padding: 100px 100px 40px 40px;
+}
+
+h2{
+    padding-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+*{
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0rem;
+    line-height: 1;
+}
+    .logoTitle {
+        font-size: 2.8rem;
+        padding: 5px;
+        height: 40px;
+    }
+
+    img {
+        width: 40px;
+    }
+
+    .logo {
+        height: 100px;
+        padding: 5px;
+    }
+    .header {
+        padding: 5px;
+        
+    }
+    
+    h2{
+        padding-top: 8px;
+    }
+}
