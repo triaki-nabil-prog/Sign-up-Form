@@ -86,7 +86,7 @@ form {
 .footer {}
 
 .side-logo {
-    background-image: url("/img/sunset.jpg");
+    background-image: url("img/sunset.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
