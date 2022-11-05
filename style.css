@@ -20,7 +20,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: var(--font-stack);
-    
+
     font-size: 1.1rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
@@ -29,16 +29,61 @@
 }
 
 
-
 img {
     width: 80px;
-    
+
+
 }
 
 .container {
     display: flex;
 
+
 }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: var(--background-color);
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.row>div {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+
+}
+
+.legend {
+    margin: 20px;
+}
+
+.header,
+.footer {
+    background-color: var(--background-color-intro);
+    font-family: 'RacingSansOneRegular', var(--font-stack);
+    padding: 50px 50px 20px 20px;
+
+}
+
+.footer {}
 
 .side-logo {
     background-image: url("/img/sunset.jpg");
@@ -50,7 +95,6 @@ img {
 
     display: flex;
     padding-top: 20vh;
-    
 
 }
 
@@ -60,7 +104,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     background-color: black;
     max-width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -70,28 +114,51 @@ img {
 
 .logoTitle {
     height: 80px;
-    color: var(--logo-color) ;
+    color: var(--logo-color);
     font-weight: bolder;
     padding: 10px;
     font-size: 6rem;
     font-family: 'SchoolCursiveRegular', var(--font-stack);
 }
 
-.form{
-    display: flex;
-    flex-direction: column;
+
+
+
+
+h2 {
+    padding-top: 40px;
+}
+
+input {
+    box-shadow: 0px 0px 10px 1px var(--input-area-color);
+    color: var(---text-color);
+    padding: 5px;
+    border: 1px;
+    margin-top: 8px;
+}
+
+input:focus {
+    box-shadow: 0px 0px 10px 1px var(--logo-color);
+    background-color: var(--background-color-intro);
+    border: 4px solid var(--text-color);
+}
+
+label {
+    font-size: 0.8rem;
+}
+
+button {
+    background: var(--input-area-color);
+    padding: 10px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    box-shadow: 0px 0px 25px 2px var(--input-area-color);
     
 }
 
-.header {
-    background-color: var(--background-color-intro);
-    font-family: 'RacingSansOneRegular', var(--font-stack);
-    padding: 100px 100px 40px 40px;
-}
-
-h2{
-    padding-top: 40px;
-}
 
 
 
@@ -105,12 +172,13 @@ h2{
 
 
 @media only screen and (max-width: 700px) {
-*{
-    font-size: 1rem;
-    font-weight: bold;
-    letter-spacing: 0rem;
-    line-height: 1;
-}
+    * {
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: 0rem;
+        line-height: 1;
+    }
+
     .logoTitle {
         font-size: 2.8rem;
         padding: 5px;
@@ -125,12 +193,27 @@ h2{
         height: 100px;
         padding: 5px;
     }
+
     .header {
         padding: 5px;
-        
+
     }
-    
-    h2{
+
+    h2 {
         padding-top: 8px;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+
+    }
+
+    .legend {
+        margin: 5px;
     }
 }
