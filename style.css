@@ -53,22 +53,25 @@ form {
     display: flex;
     flex-direction: column;
     flex: 1;
-    box-sizing:content-box;
-    
-    
+    box-sizing: content-box;
+
+
 }
-.shadow{
+
+.shadow {
     background: #fefae0;
     background: -webkit-linear-gradient(0deg, #fefae0 0%, #dda15e 100%);
     background: linear-gradient(0deg, #fefae0 0%, #dda15e 100%);
     height: 10px;
 }
-.shadow-reverse{
+
+.shadow-reverse {
     background: #dda15e;
     background: -webkit-linear-gradient(0deg, #dda15e 0%, #fefae0 100%);
     background: linear-gradient(0deg, #dda15e 0%, #fefae0 100%);
     height: 10px;
 }
+
 .row {
     display: flex;
     flex: 1;
@@ -84,7 +87,7 @@ form {
     max-width: 350px;
     margin-left: 20px;
     margin-right: 20px;
-    
+
 
 }
 
@@ -97,12 +100,8 @@ form {
     background-color: var(--background-color-intro);
     font-family: 'RacingSansOneRegular', var(--font-stack);
     padding: 50px 50px 20px 20px;
-    
 
-}
 
-.footer {
-    
 }
 
 .side-logo {
@@ -164,6 +163,31 @@ input:focus {
     border: 2px solid var(--text-color);
 }
 
+input+span {
+    position: relative;
+}
+
+input+span::before {
+    position: absolute;
+    right: -20px;
+    top: -35px;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:invalid+span::before {
+    content: "✖";
+    color: red;
+}
+
+input:valid+span::before {
+    content: "✓";
+    color: green;
+}
+
+
 label {
     font-size: 0.8rem;
     margin-top: 5px;
@@ -178,7 +202,6 @@ button {
 
 button:hover {
     box-shadow: 0px 0px 25px 2px var(--input-area-color);
-    
 }
 
 
