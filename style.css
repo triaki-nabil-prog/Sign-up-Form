@@ -53,13 +53,26 @@ form {
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color: var(--background-color);
+    box-sizing:content-box;
+    
+    
 }
-
+.shadow{
+    background: #fefae0;
+    background: -webkit-linear-gradient(0deg, #fefae0 0%, #dda15e 100%);
+    background: linear-gradient(0deg, #fefae0 0%, #dda15e 100%);
+    height: 10px;
+}
+.shadow-reverse{
+    background: #dda15e;
+    background: -webkit-linear-gradient(0deg, #dda15e 0%, #fefae0 100%);
+    background: linear-gradient(0deg, #dda15e 0%, #fefae0 100%);
+    height: 10px;
+}
 .row {
     display: flex;
     flex: 1;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
 }
@@ -67,7 +80,11 @@ form {
 .row>div {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    flex: 1;
+    max-width: 350px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
 
 }
 
@@ -80,17 +97,20 @@ form {
     background-color: var(--background-color-intro);
     font-family: 'RacingSansOneRegular', var(--font-stack);
     padding: 50px 50px 20px 20px;
+    
 
 }
 
-.footer {}
+.footer {
+    
+}
 
 .side-logo {
     background-image: url("./img/sunset.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 100vh;
+    min-height: 100vh;
     min-width: 35vw;
 
     display: flex;
@@ -135,6 +155,7 @@ input {
     padding: 5px;
     border: 1px;
     margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 input:focus {
@@ -145,6 +166,7 @@ input:focus {
 
 label {
     font-size: 0.8rem;
+    margin-top: 5px;
 }
 
 button {
